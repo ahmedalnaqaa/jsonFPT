@@ -78,17 +78,4 @@ class ContactService
             return 5 * $batch;
         }
     }
-
-    /**
-     * Extract duplicated contacts
-     *
-     * @param array $contactsArr
-     * @return array
-     */
-    private function contactsDuplicates($contactsArr = [])
-    {
-        $uniqueValues = array_unique($contactsArr);
-        $duplicates = array_diff_assoc($contactsArr, $uniqueValues);
-        return array_keys($duplicates);
-    }
 }

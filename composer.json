@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "ahmedalnaqaa/jsonfpt",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Project for parsing and translation json files",
     "keywords": [
         "framework",
         "laravel"

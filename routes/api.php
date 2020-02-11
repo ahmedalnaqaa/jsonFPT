@@ -17,10 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/** Resources */
 Route::get('resources', 'ResourceController@index');
 Route::get('resources/{id}', 'ResourceController@show');
-Route::any('resources/{resource}/contacts', 'ResourceController@resourceContacts');
+Route::get('resources/{resource}/contacts', 'ResourceController@resourceContacts');
 Route::post('resources', 'ResourceController@uploadSource');
 
+/** Contacts */
 Route::get('contacts', 'ContactController@index');
 Route::get('contacts/{id}', 'ContactController@show');
