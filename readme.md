@@ -36,7 +36,8 @@
   GET `api/contacts/{id}` | get contact | `id` = the contact id
   
 ## How it works
-1- Go and create resource through choosing contacts json file to upload and the language you want to translate.
+1- Go and create resource through endpoint `api/resources`, choosing contacts json file to upload and the language you want to translate.
+
 2- In Console run command `php artisan contacts:translate --limit={limit}` to loop on bulk of uploaded contacts and translate them.
 ```ssh
 NOTE: 
