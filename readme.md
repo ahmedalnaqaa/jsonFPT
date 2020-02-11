@@ -43,10 +43,10 @@ NOTE:
 - We can sechdule this command to run every second for example.
 ```
 
-##Why that solution
+## Why that solution
 * Storing and translating file at the same time is a very bad choice especially when you upload large file.
 * Translating all contacts at the same time will let `Goole API` to block the request because it has a limitation in number of requests per second and the size of the text you want translate.
 * This solution will provide a good performance for most of the large files.
 
-##Postman collection for a demo
+## Postman collection for a demo
 You can import this collection [https://www.getpostman.com/collections/9648a355413ebb8ed8b4] into your postman account and run a demo for the project.
